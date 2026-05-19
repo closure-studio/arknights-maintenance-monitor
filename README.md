@@ -122,7 +122,12 @@ cron: "17 * * * *"
 
 GitHub Actions 的 schedule 使用 UTC。也可以在 Actions 页面使用 `workflow_dispatch` 手动触发。
 
-workflow 使用 Node.js 22，执行安装依赖、构建 TypeScript、运行监控脚本。如果 `processed.json` 有变化，会自动 commit 并 push 回仓库。
+workflow 使用 Node.js 22 执行项目代码，步骤包括安装依赖、构建 TypeScript、运行监控脚本。如果 `processed.json` 有变化，会自动 commit 并 push 回仓库。
+
+workflow 中的官方 actions 使用 Node.js 24 兼容版本：
+
+- `actions/checkout@v5`
+- `actions/setup-node@v6`
 
 ## 实战校验
 
