@@ -1,0 +1,55 @@
+name: Arknights Maintenance Monitor
+
+on:
+  schedule:
+    - cron: "17 * * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: arknights-maintenance-monitor
+  cancel-in-progress: false
+
+jobs:
+  monitor:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Build
+        run: npm run build
+
+      - name: Run monitor
+        run: npm run start
+        env:
+          QQBOT_HOST: ${{ secrets.QQBOT_HOST }}
+          QQBOT_TOKEN: ${{ secrets.QQBOT_TOKEN }}
+          QQBOT_UID: ${{ secrets.QQBOT_UID }}
+          NVIDIA_API_KEY: ${{ secrets.NVIDIA_API_KEY }}
+          NVIDIA_BASE_URL: ${{ vars.NVIDIA_BASE_URL }}
+          NVIDIA_MODEL: ${{ vars.NVIDIA_MODEL }}
+
+      - name: Commit processed state
+        run: |
+          if git diff --quiet -- processed.json; then
+            echo "processed.json unchanged"
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add processed.json
+          git commit -m "chore: update processed announcements"
+          git push
