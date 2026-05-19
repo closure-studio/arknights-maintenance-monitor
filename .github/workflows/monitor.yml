@@ -9,7 +9,7 @@ permissions:
   contents: write
 
 concurrency:
-  group: arknights-maintenance-monitor
+  group: arknights-maintenance-monitor-${{ github.ref }}
   cancel-in-progress: false
 
 jobs:
@@ -50,6 +50,15 @@ jobs:
           fi
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          cp processed.json /tmp/processed.json.updated
+          git fetch origin "${GITHUB_REF_NAME}"
+          git checkout "${GITHUB_REF_NAME}"
+          git pull --rebase origin "${GITHUB_REF_NAME}"
+          cp /tmp/processed.json.updated processed.json
+          if git diff --quiet -- processed.json; then
+            echo "processed.json unchanged after rebase"
+            exit 0
+          fi
           git add processed.json
           git commit -m "chore: update processed announcements"
           git push
