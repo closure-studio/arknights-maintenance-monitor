@@ -46,18 +46,10 @@ jobs:
             echo "processed.json unchanged"
             exit 0
           fi
+
           git config user.name "closureBot"
           git config user.email "closureBot@users.noreply.github.com"
-          cp processed.json /tmp/processed.json.updated
-          git restore -- processed.json
-          git fetch origin "${GITHUB_REF_NAME}"
-          git checkout "${GITHUB_REF_NAME}"
-          git pull --rebase origin "${GITHUB_REF_NAME}"
-          cp /tmp/processed.json.updated processed.json
-          if git diff --quiet -- processed.json; then
-            echo "processed.json unchanged after rebase"
-            exit 0
-          fi
+
           git add processed.json
           git commit -m "chore: update processed announcements"
-          git push
+          git push origin "HEAD:${GITHUB_REF_NAME}"
