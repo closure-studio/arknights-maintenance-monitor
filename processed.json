@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "last_check": "2026-07-16T17:26:32+08:00",
+  "last_check": "2026-07-25T22:00:26+08:00",
   "processed": {
     "3044": {
       "url": "https://ak.hypergryph.com/news/3044",
@@ -36,6 +36,18 @@
       "notify_channel": null,
       "reason": "命中普通公告排除词：时装",
       "summary": "活动[活动预告]SideStory「红丝绒」复刻即将开启2026 // 07 / 16一、SideStory「红丝绒」限时复刻开启活动时间：07月20日 04:00 - 08月03日 03:59解锁条件：通关主线1-10活动说明：活动期间将开放「红丝绒」活动关卡，玩家可通过活动关卡作战、完成相关活动任务以及活动商...",
+      "notify_error": null
+    },
+    "8571": {
+      "url": "https://ak.hypergryph.com/news/8571",
+      "title": "[活动预告]2026「夏日嘉年华」限时活动即将开启",
+      "first_seen_at": "2026-07-25T22:00:25+08:00",
+      "last_seen_at": "2026-07-25T22:00:25+08:00",
+      "is_maintenance": false,
+      "notified": false,
+      "notify_channel": null,
+      "reason": "命中普通公告排除词：时装",
+      "summary": "活动[活动预告]2026「夏日嘉年华」限时活动即将开启2026 // 07 / 25夏日嘉年华活动 Part.1一、「夏日嘉年华」，SideStory「直到大地变成一颗酸橙」活动开启活动时间：08月01日 12:00 - 08月29日 03:59解锁条件：通关主线1-10活动说明：活动期间将开放「直到大地变成一颗...",
       "notify_error": null
     },
     "8573": {
