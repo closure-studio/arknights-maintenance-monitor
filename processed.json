@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "last_check": "2026-08-01T14:39:38+08:00",
+  "last_check": "2026-08-20T17:49:02+08:00",
   "processed": {
     "3044": {
       "url": "https://ak.hypergryph.com/news/3044",
@@ -48,6 +48,18 @@
       "notify_channel": null,
       "reason": "命中普通公告排除词：时装",
       "summary": "活动[活动预告]SideStory「红丝绒」复刻即将开启2026 // 07 / 16一、SideStory「红丝绒」限时复刻开启活动时间：07月20日 04:00 - 08月03日 03:59解锁条件：通关主线1-10活动说明：活动期间将开放「红丝绒」活动关卡，玩家可通过活动关卡作战、完成相关活动任务以及活动商...",
+      "notify_error": null
+    },
+    "7369": {
+      "url": "https://ak.hypergryph.com/news/7369",
+      "title": "[活动预告]SideStory「墟」复刻即将开启",
+      "first_seen_at": "2026-08-20T17:49:02+08:00",
+      "last_seen_at": "2026-08-20T17:49:02+08:00",
+      "is_maintenance": false,
+      "notified": false,
+      "notify_channel": null,
+      "reason": "命中普通公告排除词：时装",
+      "summary": "活动[活动预告]SideStory「墟」复刻即将开启2026 // 08 / 17一、SideStory「墟」限时复刻开启活动时间：08月22日 04:00 - 09月05日 03:59解锁条件：通关主线1-10活动说明：活动期间将开放「墟」活动，玩家可通过活动关卡作战、相谈室·御影、活动任务以及活动商店来获取活...",
       "notify_error": null
     },
     "8571": {
