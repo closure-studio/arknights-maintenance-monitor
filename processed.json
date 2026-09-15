@@ -1,7 +1,19 @@
 {
   "version": 1,
-  "last_check": "2026-09-04T12:30:28+08:00",
+  "last_check": "2026-09-15T15:42:38+08:00",
   "processed": {
+    "2819": {
+      "url": "https://ak.hypergryph.com/news/2819",
+      "title": "[活动预告]「逐影集趣」限时活动即将开启",
+      "first_seen_at": "2026-09-15T15:42:38+08:00",
+      "last_seen_at": "2026-09-15T15:42:38+08:00",
+      "is_maintenance": false,
+      "notified": false,
+      "notify_channel": null,
+      "reason": "命中普通公告排除词：时装",
+      "summary": "活动[活动预告]「逐影集趣」限时活动即将开启2026 // 09 / 15一、「逐影集趣」限时活动开启关卡开放时间：09月20日 16:00 - 09月30日 03:59解锁条件：通关主线 1-10活动说明：活动期间将开放「逐影集趣」限时活动，玩家可通过活动关卡作战获取【绒绒欢乐像】，提升【逐影之礼】等级获取相应...",
+      "notify_error": null
+    },
     "3044": {
       "url": "https://ak.hypergryph.com/news/3044",
       "title": "[活动预告]SideStory「众生行记」复刻即将开启",
