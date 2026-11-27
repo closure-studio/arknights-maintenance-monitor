@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "last_check": "2026-11-17T21:21:09+08:00",
+  "last_check": "2026-11-27T16:25:09+08:00",
   "processed": {
     "1454": {
       "url": "https://ak.hypergryph.com/news/1454",
@@ -84,6 +84,18 @@
       "notify_channel": null,
       "reason": "命中普通公告排除词：时装",
       "summary": "活动[活动预告]《明日方舟》七周年庆典即将开启2026 // 04 / 25七周年庆典活动 Part.1一、「七周年庆典」，主题曲「相变临界」开放活动说明：05月01日 12:00 - 05月15日 03:59期间，主题曲EP17【相变临界】关卡门槛将限时降低，通关主线3-8即可体验【相变临界】，限时获取「“厂券...",
+      "notify_error": null
+    },
+    "4913": {
+      "url": "https://ak.hypergryph.com/news/4913",
+      "title": "[活动预告]SideStory「星星不愿入睡」限时活动即将开启",
+      "first_seen_at": "2026-11-27T16:25:08+08:00",
+      "last_seen_at": "2026-11-27T16:25:08+08:00",
+      "is_maintenance": false,
+      "notified": false,
+      "notify_channel": null,
+      "reason": "命中普通公告排除词：时装",
+      "summary": "活动[活动预告]SideStory「星星不愿入睡」限时活动即将开启2026 // 11 / 27一、全新SideStory「星星不愿入睡」，活动关卡开启活动时间：12月02日 12:00 - 12月23日 03:59解锁条件：通关主线1-10活动说明：活动期间将开放「星星不愿入睡」活动关卡，玩家可通过活动关卡作战...",
       "notify_error": null
     },
     "4923": {
